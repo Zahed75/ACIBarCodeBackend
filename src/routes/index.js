@@ -2,19 +2,15 @@ const express = require('express');
 const router = express.Router();
 
 
-//routes
 
-//middlewares
-const authVerifyMiddleware = require('../middlewares/authMiddleware');
+const userRoute = require('../modules/User/controller');
+const productRoute = require('../modules/Product/controller');
+const categoryRoute = require('../modules/Category/controller');
 
-//routes
-const authRoute = require('../modules/Auth/controller');
-const userRoute=require('../modules/User/controller');
+// Endpoints
 
-//EndPoint
-
-router.use('/auth', authRoute);
-router.use('/user',userRoute);
-router.use(authVerifyMiddleware);
+router.use('/user', userRoute);
+router.use('/products', productRoute);
+router.use('/category', categoryRoute); // Category route doesn't need auth middleware
 
 module.exports = router;

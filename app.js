@@ -37,11 +37,9 @@ app.use(cookieParser());
 const whitelist = [
   'http://localhost:3000',
   'http://localhost:3001',
-  'https://v2admin.onnow.io',
-  'https://app.onnow.io',
-  'https://staging-admin.onnow.io',
   'http://localhost:3004',
   'http://localhost:3005',
+  'https://products-test-aci.onrender.com',
   '*',
 ];
 const corsOptions = {
@@ -76,7 +74,7 @@ app.use(handleError);
 
 // Undefined Route Implement
 app.use('*', (req, res) => {
-  res.status(404).json({ status: 'fail', data: 'Just for the 2nd test' });
+  res.status(404).json({ status: 'Undefined Route', data: 'Server is Okay' });
 });
 
 module.exports = app;

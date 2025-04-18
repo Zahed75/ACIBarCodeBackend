@@ -14,19 +14,19 @@ server.listen(PORT, function () {
 });
 
 //socket-server
-socketServer.on('connection', (socket) => {
-  console.log('Connected to socket server');
+// socketServer.on('connection', (socket) => {
+//   console.log('Connected to socket server');
 
-  socket.on('disconnect', () => console.log('Disconnected'));
+//   socket.on('disconnect', () => console.log('Disconnected'));
 
-  socket.on('order', () => console.log('Order placed'));
+//   socket.on('order', () => console.log('Order placed'));
 
-  socket.on('join_room', (room) => {
-    console.log({ room });
-    socket.join(room);
-  });
+//   socket.on('join_room', (room) => {
+//     console.log({ room });
+//     socket.join(room);
+//   });
 
-  socket.on('hello', () => console.log('Hello'));
-});
+//   socket.on('hello', () => console.log('Hello'));
+// });
 
-app.set('io', socketServer);
+// app.set('io', socketServer);
