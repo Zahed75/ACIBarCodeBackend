@@ -30,7 +30,7 @@ const deleteCategoryHandler = asyncHandler(async (req, res) => {
 });
 
 router.post('/create', createCategoryHandler);
-router.get('/getAll', getAllCategoriesHandler);
+router.get('/getAllCategories', getAllCategoriesHandler);
 router.delete('/delete/:id', deleteCategoryHandler);
 
 module.exports = router;
