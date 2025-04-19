@@ -34,7 +34,9 @@ To get started with this boilerplate, follow these steps:
 4. Run the application:
 
     ```
-    npm start
+    nodemon index.js
+    or
+    node index.js
     ```
 
 ## Collaborate

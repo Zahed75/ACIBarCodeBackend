@@ -1,5 +1,5 @@
 const Category = require('./model');
-const Product = require('../product/model');
+const Product = require('../Product/model');
 const { BadRequest, NotFound } = require('../../utility/errors');
 const mongoose = require('mongoose');
 
