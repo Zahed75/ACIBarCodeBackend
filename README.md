@@ -6,10 +6,9 @@ Welcome to the Backend Boilerplate Node repository! This boilerplate provides a 
 
 - **Onion Architecture:** Organize your application into layers for better separation of concerns.
 - **Express.js:** A fast, unopinionated, minimalist web framework for Node.js.
-- **JWT Authentication:** Implement secure authentication using JSON Web Tokens.
+- **JWT Authentication:** Implement secure authentication using JSON Web Tokens. 
 - **Mongoose:** MongoDB object modeling tool designed to work in an asynchronous environment.
 - **Dependency Injection:** Implement Inversion of Control for better testability and maintainability.
-- **Swagger UI:** Automatically generate beautiful API documentation.
 - **Environment Variables:** Configuration management for different environments.
 
 ## Getting Started

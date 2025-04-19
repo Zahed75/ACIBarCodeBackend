@@ -35,28 +35,19 @@ app.use(cookieParser());
 // CORS CONFIGURATIONS
 
 const whitelist = [
-  'http://localhost:3000',
-  'http://localhost:3001',
-  'http://localhost:3004',
-  'http://localhost:3005',
+  'http://localhost:8081',
   'https://products-test-aci.onrender.com',
+  'exp://192.168.0.104:8081',
   '*',
 ];
 const corsOptions = {
   credentials: true, // This is important.
   origin: (origin, callback) => {
     return callback(null, true);
-    // if (process.env.NODE_ENV !== 'production') {
-    //   return callback(null, true);
-    // } else {
-    //   // if (whitelist.includes(origin) || whitelist.includes('*')) {
-    //   // return callback(null, true);
-    //   // } else {
-    //   //   callback(new Error('Not allowed by CORS'));
-    //   // }
-    // }
+ 
   },
 };
+
 
 app.use(cors(corsOptions));
 
